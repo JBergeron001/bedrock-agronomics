@@ -20,6 +20,7 @@
 <style>
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
+section[id]{scroll-margin-top:96px}
 body{margin:0;background:#F7F3E9;color:#141E1A;font-family:Inter,system-ui,-apple-system,sans-serif;font-size:17.5px;line-height:1.62;-webkit-font-smoothing:antialiased}
 h1,h2,h3,h4,.lw,.stat b{font-family:"Red Hat Display",Inter,system-ui,sans-serif;letter-spacing:-.024em}
 h1,h2,h3{line-height:1.06;margin:0}
@@ -144,6 +145,13 @@ footer a{color:#D9EAE6}
 .hero.ph .link,.dark .link{color:#fff}
 .link:hover{border-color:#fff}
 .card{box-shadow:none}
+.mail{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-top:30px}
+.mail .addr{font-family:"Red Hat Display",sans-serif;font-size:clamp(20px,2.4vw,30px);font-weight:700;color:#102A1C;letter-spacing:-.02em;word-break:break-all}
+.dark .mail .addr{color:#fff}
+.copy{background:transparent;border:2px solid #C7BCA4;color:#17443C;border-radius:10px;padding:11px 18px;font:600 15px Inter,sans-serif;cursor:pointer}
+.copy:hover{background:#EDE6D6}
+.dark .copy{border-color:rgba(255,255,255,.42);color:#fff}
+.dark .copy:hover{background:rgba(255,255,255,.12)}
 .skip{position:absolute;left:-9999px;top:0;background:#134A44;color:#fff;padding:12px 18px;z-index:99;border-radius:0 0 8px 0}
 .skip:focus{left:0}
 a:focus-visible,button:focus-visible{outline:3px solid #8ECB4E;outline-offset:3px}
@@ -276,7 +284,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #8ECB4E;outline-offset:3p
 <section id="contact" class="cream2"><div class="wrap">
 <div class="lab">Contact</div>
 <h2 class="xl" style="max-width:14ch;color:#102A1C">Tell us what to measure.</h2>
-<div class="cta" style="margin-top:34px"><a class="btn" href="mailto:admin@bedrockagronomics.com">admin@bedrockagronomics.com</a></div>
+<div class="mail"><a class="addr" href="mailto:admin@bedrockagronomics.com">admin@bedrockagronomics.com</a><button class="copy" type="button" data-addr="admin@bedrockagronomics.com">Copy address</button></div>
 </div></section>
 
 </main>
@@ -284,5 +292,15 @@ a:focus-visible,button:focus-visible{outline:3px solid #8ECB4E;outline-offset:3p
 <div><h4>Company</h4><a href="index.html">Home</a><a href="research.html">Research</a></div>
 <div><h4>Contact</h4><a href="mailto:admin@bedrockagronomics.com">admin@bedrockagronomics.com</a><span style="display:block;padding:5px 0">St. Louis, Missouri</span></div>
 </div><div class="fbot"><span>&copy; 2026 Bedrock Agronomics, LLC &middot; in formation</span><span>Photographs licensed via Unsplash</span></div></div></footer>
+<script>
+document.querySelectorAll('.copy').forEach(function(b){
+  b.addEventListener('click', function(){
+    var a = b.getAttribute('data-addr');
+    var done = function(){ b.textContent='Copied'; setTimeout(function(){ b.textContent='Copy address'; }, 1800); };
+    var fb = function(){ try{ var t=document.createElement('textarea'); t.value=a; document.body.appendChild(t); t.select(); document.execCommand('copy'); document.body.removeChild(t); done(); }catch(e){} };
+    try{ navigator.clipboard.writeText(a).then(done, fb); }catch(e){ fb(); }
+  });
+});
+</script>
 </body>
 </html>
