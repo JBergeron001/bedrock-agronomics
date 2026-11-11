@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PREVIEW &#183; Research &mdash; Bedrock Agronomics</title>
+<meta name="description" content="How Bedrock Agronomics designs replicated trials and what it measures.">
+<link rel="icon" href="favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bedrock Agronomics">
+<meta property="og:title" content="Research &mdash; Bedrock Agronomics">
+<meta property="og:description" content="How Bedrock Agronomics designs replicated trials and what it measures.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1759104050908-762e4ed24953?auto=format&amp;fit=crop&amp;q=70&amp;w=1200">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Red+Hat+Display:wght@400;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+section[id]{scroll-margin-top:96px}
+body{margin:0;background:#F7F3E9;color:#141E1A;font-family:Inter,system-ui,-apple-system,sans-serif;font-size:17.5px;line-height:1.62;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4,.lw,.stat b{font-family:"Red Hat Display",Inter,system-ui,sans-serif;letter-spacing:-.024em}
+h1,h2,h3{line-height:1.06;margin:0}
+p{margin:0 0 1em}
+a{color:#2A6B1E}
+img,svg{display:block;max-width:100%}
+.wrap{width:min(1200px,100% - 44px);margin-inline:auto}
+.lm{display:inline-flex;align-items:center;gap:11px}
+.mk{width:27px;height:38px;flex:none}
+.lw{font-size:21px;white-space:nowrap;font-weight:400}.lw b{font-weight:900}
+.lab{font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#BF6334;margin-bottom:16px}
+.lab.a{color:#B07A0C}.lab.g{color:#3F8C22}.lab.w{color:#E8B65A}
+/* nav */
+header.nav{position:sticky;top:0;z-index:40;background:rgba(247,243,233,.92);backdrop-filter:blur(10px);border-bottom:1px solid #E2DACA}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;height:76px}
+.nav nav{display:flex;align-items:center;gap:4px}
+.nav nav a{font-size:15px;color:#4A554E;text-decoration:none;padding:9px 13px;border-radius:8px}
+.nav nav a:hover{background:#EDE6D6;color:#141E1A}
+.nav nav a[aria-current="page"]{color:#141E1A;font-weight:600}
+.btn{display:inline-flex;align-items:center;gap:8px;background:#3F8C22;color:#fff!important;text-decoration:none;padding:13px 22px;border-radius:10px;font-weight:600;font-size:15.5px;border:2px solid #3F8C22}
+.btn:hover{background:#357518;border-color:#357518}
+.btn.o{background:transparent;color:#17443C!important;border-color:#C7BCA4}
+.btn.o:hover{background:#EDE6D6}
+.btn.am{background:#E0A42E;border-color:#E0A42E;color:#1B2410!important}
+.btn.am:hover{background:#CE9521}
+.btn.o.w{color:#fff!important;border-color:rgba(255,255,255,.42);background:transparent}
+.btn.o.w:hover{background:rgba(255,255,255,.12)}
+/* hero */
+.hero{background:#F7F3E9;padding:72px 0 132px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;left:0;right:0;bottom:0;height:132px;background:#0B2520;z-index:0}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.02fr .98fr;gap:52px;align-items:center}
+.hero h1{font-size:clamp(40px,5.6vw,70px);font-weight:900;margin:0 0 22px;color:#102A1C}
+.hero h1 span{color:#3F8C22}
+.hero p.lead{font-size:20px;color:#4A554E;max-width:38em;margin:0 0 30px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.fig{border-radius:18px;box-shadow:0 22px 50px rgba(20,40,30,.17)}
+/* fact band */
+.facts{background:#0B2520;color:#fff;padding:0 0 64px}
+.facts .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid rgba(255,255,255,.16)}
+.facts div{padding:28px 26px 0;border-left:1px solid rgba(255,255,255,.16)}
+.facts div:first-child{border-left:0;padding-left:0}
+.facts span{display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#E8B65A;font-weight:700;margin-bottom:9px}
+.facts b{font-family:"Red Hat Display",sans-serif;font-size:21px;font-weight:700;line-height:1.2}
+/* sections */
+section{padding:124px 0}
+.cream2{background:#EFE8D8}
+.white{background:#fff}
+.hd{max-width:46ch;margin-bottom:60px}
+.hd h2{font-size:clamp(30px,3.7vw,46px);font-weight:800;color:#102A1C;margin-bottom:18px}
+.hd p{font-size:19px;color:#5A655E;margin:0}
+.grid{display:grid;gap:24px}
+.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.card{background:#fff;border:1px solid #E6DFCE;border-radius:16px;padding:30px 28px;position:relative;overflow:hidden}
+.card:before{content:"";position:absolute;inset:0 0 auto 0;height:5px;background:var(--c,#3F8C22)}
+.card h3{font-size:21px;font-weight:700;margin-bottom:11px;color:#102A1C}
+.card p{margin:0;color:#4A554E;font-size:16px}
+.card .n{font-family:"Red Hat Display",sans-serif;font-size:13px;font-weight:800;letter-spacing:.1em;color:var(--c,#3F8C22);margin-bottom:12px}
+.ic{width:44px;height:44px;border-radius:12px;background:var(--b,#EAF3E4);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.ic svg{width:22px;height:22px;stroke:var(--c,#3F8C22);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.note{background:#FBF1DC;border:1px solid #E8D3A4;border-left:5px solid #E0A42E;border-radius:12px;padding:20px 24px;font-size:16px;color:#5A4719;margin-top:34px}
+.note b{color:#3F2E08}
+ul.ck{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:13px}
+ul.ck li{display:flex;gap:13px;font-size:16.5px;color:#4A554E}
+ul.ck svg{width:21px;height:21px;flex:none;margin-top:3px;stroke:#3F8C22;fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.tbl{width:100%;border-collapse:collapse;background:#fff;font-size:16px;border-radius:16px;overflow:hidden}
+.tbl th{text-align:left;background:#102A1C;color:#fff;font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:16px 20px;font-weight:700}
+.tbl td{padding:17px 20px;border-top:1px solid #EDE6D6;color:#4A554E;vertical-align:top}
+.tbl td:first-child{color:#102A1C;font-weight:700}
+.scroll{overflow-x:auto;border:1px solid #E6DFCE;border-radius:16px}
+.dark{background:#0B2520;color:#fff}
+.dark .hd h2{color:#fff}.dark .hd p{color:#C3D6CF}
+.dark .card{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14)}
+.dark .card h3{color:#fff}.dark .card p{color:#C3D6CF}
+.dark .ic{background:rgba(255,255,255,.1)}
+.qa{border-top:1px solid #E2DACA;padding:26px 0}
+.qa h3{font-size:20px;margin-bottom:9px;color:#102A1C}
+.qa p{margin:0;color:#4A554E;font-size:16.5px}
+footer{background:#0B2520;color:#9FB8B0;padding:60px 0 40px;font-size:15px}
+footer a{color:#D9EAE6}
+.fgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px;padding-bottom:34px;border-bottom:1px solid rgba(255,255,255,.13)}
+.fgrid h4{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#E8B65A;margin:0 0 15px;font-weight:700}
+.fgrid a{display:block;text-decoration:none;padding:5px 0}
+.fgrid a:hover{color:#fff}
+.fbot{padding-top:26px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:14px;color:#7D9B93}
+
+/* photography */
+.bg{position:absolute;inset:0;background-size:cover;background-position:center;z-index:0}
+.bg:after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(8,32,26,.95) 0%,rgba(8,32,26,.86) 42%,rgba(8,32,26,.42) 100%)}
+.bg.v:after{background:linear-gradient(180deg,rgba(8,32,26,.78) 0%,rgba(8,32,26,.9) 100%)}
+.bg.b:after{background:linear-gradient(to top,rgba(8,32,26,.88) 0%,rgba(8,32,26,.15) 62%)}
+.hero.ph{background:#0B2520;color:#fff;padding:100px 0 88px}
+.hero.ph:after{display:none}
+.hero.ph h1{color:#fff}
+.hero.ph h1 span{color:#8ECB4E}
+.hero.ph p.lead{color:#D5E4DF}
+.hero.ph .lab{color:#E8B65A}
+.dark.ph,.imgband{position:relative;overflow:hidden}
+.dark.ph .wrap{position:relative;z-index:2}
+.imgband{height:clamp(380px,56vw,580px);padding:0;display:flex;align-items:flex-end}
+.imgband .wrap{position:relative;z-index:2;padding-bottom:52px}
+/* full-bleed photographic plate, no scrim */
+.plate{padding:0;background:#0B2520}
+.plate img{width:100%;height:clamp(320px,52vw,640px);object-fit:cover;display:block}
+.plate .cbar{background:#F7F3E9;padding:20px 0 0}
+.plate.on2 .cbar{background:#EFE8D8}
+.pcap{font-size:13.5px;color:#6E776F;max-width:54ch;margin:0;line-height:1.52}
+.pcap b{color:#102A1C;font-weight:700}
+.imgband p{color:#fff;font-size:22px;font-weight:600;max-width:30ch;margin:0;font-family:"Red Hat Display",sans-serif;line-height:1.25}
+.imgband span{display:block;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#E8B65A;font-weight:700;margin-bottom:12px}
+.shot{width:100%;height:clamp(380px,46vw,560px);object-fit:cover;border-radius:18px;box-shadow:0 22px 50px rgba(20,40,30,.17)}
+
+/* minimal system */
+.xl{font-size:clamp(42px,6.6vw,88px);font-weight:900;line-height:.97;letter-spacing:-.032em}
+.one{font-size:clamp(26px,3vw,38px);font-weight:700;line-height:1.22;letter-spacing:-.022em;color:#102A1C;max-width:21ch;margin:0}
+.dark .one{color:#fff}
+.rowlist{border-top:1px solid #DDD5C3}
+.rowlist>div{display:grid;grid-template-columns:116px 1fr 1.12fr;gap:30px;padding:34px 0;border-bottom:1px solid #DDD5C3;align-items:baseline}
+.rowlist .k{font-family:"Red Hat Display",sans-serif;font-weight:800;font-size:12px;letter-spacing:.11em;color:#BF6334;line-height:1.35}
+.rowlist h3{font-size:clamp(22px,2.2vw,29px);font-weight:700;color:#102A1C}
+.rowlist p{margin:0;color:#5A655E;font-size:16.5px}
+.dark .rowlist,.dark .rowlist>div{border-color:rgba(255,255,255,.17)}
+.dark .rowlist h3{color:#fff}.dark .rowlist p{color:#C3D6CF}.dark .rowlist .k{color:#E8B65A}
+.fine{font-size:14.5px;color:#7C857D;max-width:62ch;margin:44px 0 0;line-height:1.6}
+.dark .fine{color:#9FB8B0}
+.link{display:inline-flex;align-items:center;gap:9px;font-weight:600;font-size:17px;text-decoration:none;color:#102A1C;border-bottom:2px solid #8ECB4E;padding-bottom:3px}
+.hero.ph .link,.dark .link{color:#fff}
+.link:hover{border-color:#fff}
+.card{box-shadow:none}
+.mail{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-top:30px}
+.mail .addr{font-family:"Red Hat Display",sans-serif;font-size:clamp(20px,2.4vw,30px);font-weight:700;color:#102A1C;letter-spacing:-.02em;word-break:break-all}
+.dark .mail .addr{color:#fff}
+.copy{background:transparent;border:2px solid #C7BCA4;color:#17443C;border-radius:10px;padding:11px 18px;font:600 15px Inter,sans-serif;cursor:pointer}
+.copy:hover{background:#EDE6D6}
+.dark .copy{border-color:rgba(255,255,255,.42);color:#fff}
+.dark .copy:hover{background:rgba(255,255,255,.12)}
+/* figures */
+.figw{margin:0}
+.figw .chart{width:100%;height:auto;overflow:visible}
+.cap{font-size:13.5px;color:#6E776F;margin-top:20px;line-height:1.52;max-width:54ch}
+.cap-n{color:#8A9189;font-size:12.5px;margin-top:7px}
+.dark .cap{color:#A9C0B8}.dark .cap-n{color:#8FA9A1}
+.figrow{display:grid;grid-template-columns:1fr 1fr;gap:58px;align-items:start}
+.figstack{display:grid;gap:72px}
+/* chart motion */
+.chart .cl{stroke-dasharray:var(--len);stroke-dashoffset:var(--len);transition:stroke-dashoffset 1500ms cubic-bezier(.22,.61,.36,1)}
+.chart.in .cl{stroke-dashoffset:0}
+.chart .cb{opacity:0;transition:opacity 900ms ease 350ms}
+.chart.in .cb{opacity:1}
+.chart .cp{opacity:0;transform:translateY(8px);transition:opacity 620ms ease,transform 620ms cubic-bezier(.22,.61,.36,1)}
+.chart.in .cp{opacity:1;transform:none}
+/* reveals */
+.rv{opacity:0;transform:translateY(20px);transition:opacity 780ms cubic-bezier(.22,.61,.36,1),transform 780ms cubic-bezier(.22,.61,.36,1)}
+.rv.in{opacity:1;transform:none}
+.rowlist>div.rv:nth-child(2){transition-delay:90ms}
+.rowlist>div.rv:nth-child(3){transition-delay:180ms}
+.rowlist>div.rv:nth-child(4){transition-delay:270ms}
+.rowlist>div.rv:nth-child(5){transition-delay:360ms}
+.rowlist>div.rv:nth-child(6){transition-delay:450ms}
+/* slow drift on photographic backgrounds */
+@keyframes drift{from{transform:scale(1.015)}to{transform:scale(1.1)}}
+.bg.ken{animation:drift 26s ease-in-out infinite alternate;will-change:transform}
+@media (prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ .chart .cl{stroke-dashoffset:0!important;transition:none}
+ .chart .cb,.chart .cp{opacity:1!important;transform:none!important;transition:none}
+ .rv{opacity:1!important;transform:none!important;transition:none}
+ .bg.ken{animation:none}
+}
+@media (max-width:860px){.figrow{grid-template-columns:1fr;gap:40px}.figstack{gap:54px}}
+.skip{position:absolute;left:-9999px;top:0;background:#134A44;color:#fff;padding:12px 18px;z-index:99;border-radius:0 0 8px 0}
+.skip:focus{left:0}
+a:focus-visible,button:focus-visible{outline:3px solid #8ECB4E;outline-offset:3px}
+@media (max-width:860px){.rowlist>div{grid-template-columns:1fr;gap:10px;padding:26px 0}section{padding:76px 0}}
+@media (max-width:980px){.imgband{height:360px}.shot{height:320px}.hero.ph{padding:62px 0 58px}.plate img{height:300px}}
+@media (max-width:980px){
+ .hero .wrap,.split{grid-template-columns:1fr;gap:38px}
+ .hero{padding:52px 0 72px}.hero:after{height:72px}
+ .g2,.g3,.g4{grid-template-columns:1fr}
+ .facts .wrap{grid-template-columns:1fr 1fr}
+ .facts div{border-left:0;padding:22px 0 0}
+ .facts div:nth-child(2){border-left:1px solid rgba(255,255,255,.16);padding-left:22px}
+ .facts div:nth-child(4){border-left:1px solid rgba(255,255,255,.16);padding-left:22px}
+ .fgrid{grid-template-columns:1fr}
+ section{padding:62px 0}
+}
+@media (max-width:720px){
+ .nav .wrap{height:auto;padding-block:12px;flex-wrap:wrap;row-gap:6px}
+ .nav nav a{font-size:14px;padding:7px 9px}
+ body{font-size:16.5px}
+ .facts .wrap{grid-template-columns:1fr}
+ .facts div:nth-child(n){border-left:0;padding-left:0}
+}
+</style>
+</head>
+<body>
+<a href="#main" class="skip">Skip to content</a>
+<header class="nav"><div class="wrap">
+<a href="index.html" style="text-decoration:none"><span class="lm"><svg viewBox="0 0 60 84" aria-hidden="true" class="mk"><defs><clipPath id="bkr"><path d="M0 0 H31 A21 21 0 0 1 31 42 H0 Z"/><path d="M0 38 H37 A23 23 0 0 1 37 84 H0 Z"/></clipPath></defs><g clip-path="url(#bkr)"><g transform="rotate(-14 30 42)"><rect x="-48" y="-38" width="170" height="54" fill="#C8870A"/><rect x="-48" y="19.5" width="170" height="16.5" fill="#2E7A70"/><rect x="-48" y="39.5" width="170" height="16.5" fill="#1D6B63"/><rect x="-48" y="59.5" width="170" height="80" fill="#134A44"/></g></g></svg><span class="lw" style="color:#134A44"><b>Bedrock</b> Agronomics</span></span></a>
+<nav><a href="index.html">Home</a><a href="research.html" aria-current="page">Research</a><a href="#contact" class="btn" style="margin-left:8px">Start a study</a></nav>
+</div></header>
+<main id="main">
+
+<section class="hero ph"><div class="bg ken" style="background-image:url(https://images.unsplash.com/photo-1600747476236-76579658b1b1?auto=format&fit=crop&q=70&w=2000)"></div><div class="wrap" style="grid-template-columns:1.05fr .95fr">
+<div>
+<div class="lab">Research</div>
+<h1 style="font-size:clamp(36px,5vw,62px);font-weight:900">How we design a study.</h1>
+<p class="lead" style="max-width:34ch;margin-top:22px">Written down, so a client, a reviewer and a state control official can audit the same work.</p>
+</div>
+<div><svg viewBox="0 0 600 460" role="img" aria-label="Aerial diagram of randomized replicated trial plots" class="fig">
+<rect width="600" height="460" rx="18" fill="#5E3F27"/>
+<rect x="40" y="40" width="118" height="86" rx="6" fill="#D8C3A0"/><text x="50" y="62" font-family="Inter,sans-serif" font-size="12" font-weight="600" fill="rgba(0,0,0,.55)">D1</text><path d="M48 70 V118" stroke="rgba(0,0,0,.18)" stroke-width="1.6"/><path d="M66 70 V118" stroke="rgba(0,0,0,.18)" stroke-width="1.6"/><path d="M84 70 V118" stroke="rgba(0,0,0,.18)" stroke-width="1.6"/><path d="M102 70 V118" stroke="rgba(0,0,0,.18)" stroke-width="1.6"/><path d="M120 70 V118" stroke="rgba(0,0,0,.18)" stroke-width="1.6"/><path d="M138 70 V118" stroke="rgba(0,0,0,.18)" stroke-width="1.6"/><rect x="168" y="40" width="118" height="86" rx="6" fill="#5CA82F"/><text x="178" y="62" font-family="Inter,sans-serif" font-size="12" font-weight="600" fill="rgba(255,255,255,.95)">B1</text><path d="M176 70 V118" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M194 70 V118" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M212 70 V118" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M230 70 V118" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M248 70 V118" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M266 70 V118" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><rect x="296" y="40" width="118" height="86" rx="6" fill="#8ECB4E"/><text x="306" y="62" font-family="Inter,sans-serif" font-size="12" font-weight="600" fill="rgba(255,255,255,.95)">A1</text><path d="M304 70 V118" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M322 70 V118" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M340 70 V118" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M358 70 V118" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M376 70 V118" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M394 70 V118" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><rect x="424" y="40" width="118" height="86" rx="6" fill="#2F6B1B"/><text x="434" y="62" font-family="Inter,sans-serif" font-size="12" font-weight="600" fill="rgba(255,255,255,.95)">C1</text><path d="M432 70 V118" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M450 70 V118" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M468 70 V118" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M486 70 V118" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M504 70 V118" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M522 70 V118" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><rect x="40" y="136" width="118" height="86" rx="6" fill="#5CA82F"/><text x="50" y="158" font-family="Inter,sans-serif" font-size="12" font-weight="600" fill="rgba(255,255,255,.95)">B2</text><path d="M48 166 V214" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M66 166 V214" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M84 166 V214" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M102 166 V214" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M120 166 V214" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M138 166 V214" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><rect x="168" y="136" width="118" height="86" rx="6" fill="#2F6B1B"/><text x="178" y="158" font-family="Inter,sans-serif" font-size="12" font-weight="600" fill="rgba(255,255,255,.95)">C2</text><path d="M176 166 V214" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M194 166 V214" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M212 166 V214" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M230 166 V214" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M248 166 V214" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M266 166 V214" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><rect x="296" y="136" width="118" height="86" rx="6" fill="#D8C3A0"/><text x="306" y="158" font-family="Inter,sans-serif" font-size="12" font-weight="600" fill="rgba(0,0,0,.55)">D2</text><path d="M304 166 V214" stroke="rgba(0,0,0,.18)" stroke-width="1.6"/><path d="M322 166 V214" stroke="rgba(0,0,0,.18)" stroke-width="1.6"/><path d="M340 166 V214" stroke="rgba(0,0,0,.18)" stroke-width="1.6"/><path d="M358 166 V214" stroke="rgba(0,0,0,.18)" stroke-width="1.6"/><path d="M376 166 V214" stroke="rgba(0,0,0,.18)" stroke-width="1.6"/><path d="M394 166 V214" stroke="rgba(0,0,0,.18)" stroke-width="1.6"/><rect x="424" y="136" width="118" height="86" rx="6" fill="#8ECB4E"/><text x="434" y="158" font-family="Inter,sans-serif" font-size="12" font-weight="600" fill="rgba(255,255,255,.95)">A2</text><path d="M432 166 V214" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M450 166 V214" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M468 166 V214" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M486 166 V214" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M504 166 V214" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M522 166 V214" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><rect x="40" y="232" width="118" height="86" rx="6" fill="#5CA82F"/><text x="50" y="254" font-family="Inter,sans-serif" font-size="12" font-weight="600" fill="rgba(255,255,255,.95)">B3</text><path d="M48 262 V310" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M66 262 V310" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M84 262 V310" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M102 262 V310" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M120 262 V310" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M138 262 V310" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><rect x="168" y="232" width="118" height="86" rx="6" fill="#8ECB4E"/><text x="178" y="254" font-family="Inter,sans-serif" font-size="12" font-weight="600" fill="rgba(255,255,255,.95)">A3</text><path d="M176 262 V310" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M194 262 V310" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M212 262 V310" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M230 262 V310" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M248 262 V310" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M266 262 V310" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><rect x="296" y="232" width="118" height="86" rx="6" fill="#D8C3A0"/><text x="306" y="254" font-family="Inter,sans-serif" font-size="12" font-weight="600" fill="rgba(0,0,0,.55)">D3</text><path d="M304 262 V310" stroke="rgba(0,0,0,.18)" stroke-width="1.6"/><path d="M322 262 V310" stroke="rgba(0,0,0,.18)" stroke-width="1.6"/><path d="M340 262 V310" stroke="rgba(0,0,0,.18)" stroke-width="1.6"/><path d="M358 262 V310" stroke="rgba(0,0,0,.18)" stroke-width="1.6"/><path d="M376 262 V310" stroke="rgba(0,0,0,.18)" stroke-width="1.6"/><path d="M394 262 V310" stroke="rgba(0,0,0,.18)" stroke-width="1.6"/><rect x="424" y="232" width="118" height="86" rx="6" fill="#2F6B1B"/><text x="434" y="254" font-family="Inter,sans-serif" font-size="12" font-weight="600" fill="rgba(255,255,255,.95)">C3</text><path d="M432 262 V310" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M450 262 V310" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M468 262 V310" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M486 262 V310" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M504 262 V310" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M522 262 V310" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><rect x="40" y="328" width="118" height="86" rx="6" fill="#D8C3A0"/><text x="50" y="350" font-family="Inter,sans-serif" font-size="12" font-weight="600" fill="rgba(0,0,0,.55)">D4</text><path d="M48 358 V406" stroke="rgba(0,0,0,.18)" stroke-width="1.6"/><path d="M66 358 V406" stroke="rgba(0,0,0,.18)" stroke-width="1.6"/><path d="M84 358 V406" stroke="rgba(0,0,0,.18)" stroke-width="1.6"/><path d="M102 358 V406" stroke="rgba(0,0,0,.18)" stroke-width="1.6"/><path d="M120 358 V406" stroke="rgba(0,0,0,.18)" stroke-width="1.6"/><path d="M138 358 V406" stroke="rgba(0,0,0,.18)" stroke-width="1.6"/><rect x="168" y="328" width="118" height="86" rx="6" fill="#2F6B1B"/><text x="178" y="350" font-family="Inter,sans-serif" font-size="12" font-weight="600" fill="rgba(255,255,255,.95)">C4</text><path d="M176 358 V406" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M194 358 V406" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M212 358 V406" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M230 358 V406" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M248 358 V406" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M266 358 V406" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><rect x="296" y="328" width="118" height="86" rx="6" fill="#8ECB4E"/><text x="306" y="350" font-family="Inter,sans-serif" font-size="12" font-weight="600" fill="rgba(255,255,255,.95)">A4</text><path d="M304 358 V406" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M322 358 V406" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M340 358 V406" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M358 358 V406" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M376 358 V406" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M394 358 V406" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><rect x="424" y="328" width="118" height="86" rx="6" fill="#5CA82F"/><text x="434" y="350" font-family="Inter,sans-serif" font-size="12" font-weight="600" fill="rgba(255,255,255,.95)">B4</text><path d="M432 358 V406" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M450 358 V406" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M468 358 V406" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M486 358 V406" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M504 358 V406" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/><path d="M522 358 V406" stroke="rgba(255,255,255,.3)" stroke-width="1.6"/>
+<g font-family="Inter,sans-serif" font-size="12" fill="rgba(255,255,255,.9)" letter-spacing=".1em">
+<text x="40" y="26">RANDOMIZED &#183; REPLICATED &#183; 4 TREATMENTS &#215; 4 BLOCKS</text></g>
+</svg></div>
+</div></section>
+
+<section class="white"><div class="wrap">
+<div class="hd rv"><div class="lab">Questions</div><h2>Five, every time.</h2></div>
+<div class="rowlist">
+<div class="rv"><div class="k">01</div><h3>Efficiency</h3><p>Agronomic efficiency, partial factor productivity and apparent recovery of applied nutrients.</p></div>
+<div class="rv"><div class="k">02</div><h3>Substitution</h3><p>How far the fertilizer rate can fall before yield moves.</p></div>
+<div class="rv"><div class="k">03</div><h3>Soil function</h3><p>Exchange capacity, water holding, aggregate stability, pH buffering, across site-years.</p></div>
+<div class="rv"><div class="k">04</div><h3>Fate</h3><p>Whether nutrients leave in leachate or runoff.</p></div>
+<div class="rv"><div class="k">05</div><h3>Economics</h3><p>Partial budget per acre, freight and application included.</p></div>
+</div></div></section>
+
+<section id="standards" class="cream2"><div class="wrap">
+<div class="hd rv"><div class="lab g">Trial design</div><h2>Rules we do not bend.</h2></div>
+<div class="rowlist">
+<div class="rv"><div class="k">DESIGN</div><h3>Randomized complete block</h3><p>Four replications minimum. Buffer rows and alleys. Never a single demonstration strip.</p></div>
+<div class="rv"><div class="k">TREATMENTS</div><h3>Control, label rate, 2&#215; label rate</h3><p>Plus a reduced-fertilizer arm where the claim concerns nutrient efficiency.</p></div>
+<div class="rv"><div class="k">ENDPOINTS</div><h3>Fixed before the season</h3><p>Measures and the analysis plan are written into the protocol and not revised afterwards.</p></div>
+<div class="rv"><div class="k">ANALYSIS</div><h3>Stated, not selected</h3><p>Analysis of variance with mean separation, coefficient of variation and significance reported at the level the receiving state accepts.</p></div>
+<div class="rv"><div class="k">SCALE</div><h3>Site-years, not seasons</h3><p>Most registration reviews want two years at each of several sites, on soils common to that state.</p></div>
+<div class="rv"><div class="k">CONDUCT</div><h3>Written procedures</h3><p>Standard operating procedures for sampling, handling and data capture. Protocols follow Good Experimental Practice principles.</p></div>
+<div class="rv"><div class="k">LABS</div><h3>Independent</h3><p>University and accredited commercial laboratories, under chain of custody. No in-house bench.</p></div>
+</div>
+<div class="figrow" style="margin-top:78px">
+<div class="rv"><figure class="figw"><svg class="chart" id="f2" viewBox="0 0 580 368" role="img" aria-label="Fig. 2 &#8212; Replicate values by treatment arm, single site-year."><path d="M58 24 V296 H560" fill="none" stroke="#CFC6B2" stroke-width="1" shape-rendering="crispEdges"/><path d="M58 296.0 H560" stroke="#E4DCCA" stroke-width="1" shape-rendering="crispEdges"/><text x="48.0" y="299.6" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" font-weight="400" fill="#8A9189">92</text><path d="M58 228.0 H560" stroke="#E4DCCA" stroke-width="1" shape-rendering="crispEdges"/><text x="48.0" y="231.6" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" font-weight="400" fill="#8A9189">98</text><path d="M58 160.0 H560" stroke="#E4DCCA" stroke-width="1" shape-rendering="crispEdges"/><text x="48.0" y="163.6" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" font-weight="400" fill="#8A9189">104</text><path d="M58 92.0 H560" stroke="#E4DCCA" stroke-width="1" shape-rendering="crispEdges"/><text x="48.0" y="95.6" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" font-weight="400" fill="#8A9189">110</text><path d="M58 24.0 H560" stroke="#E4DCCA" stroke-width="1" shape-rendering="crispEdges"/><text x="48.0" y="27.6" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" font-weight="400" fill="#8A9189">116</text><g class="cb" style="transition-delay:200ms"><rect x="90.8" y="202.0" width="60" height="19.1" fill="#8A9189" fill-opacity=".12"/><path d="M86.8 211.5 h68" stroke="#8A9189" stroke-width="2.4"/></g><circle class="cp" style="transition-delay:500ms" cx="101.8" cy="212.0" r="3.2" fill="#8A9189" fill-opacity=".85"/><circle class="cp" style="transition-delay:545ms" cx="109.3" cy="192.0" r="3.2" fill="#8A9189" fill-opacity=".85"/><circle class="cp" style="transition-delay:590ms" cx="117.0" cy="211.2" r="3.2" fill="#8A9189" fill-opacity=".85"/><circle class="cp" style="transition-delay:635ms" cx="124.5" cy="213.5" r="3.2" fill="#8A9189" fill-opacity=".85"/><circle class="cp" style="transition-delay:680ms" cx="132.2" cy="229.6" r="3.2" fill="#8A9189" fill-opacity=".85"/><circle class="cp" style="transition-delay:725ms" cx="139.8" cy="210.9" r="3.2" fill="#8A9189" fill-opacity=".85"/><text x="120.8" y="318.0" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="9.6" font-weight="700" fill="#102A1C">CONTROL</text><text x="120.8" y="354.0" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" font-weight="400" fill="#8A9189">n=6  CV 2.3%</text><g class="cb" style="transition-delay:320ms"><rect x="216.2" y="112.6" width="60" height="14.6" fill="#3F8C22" fill-opacity=".12"/><path d="M212.2 119.9 h68" stroke="#3F8C22" stroke-width="2.4"/></g><circle class="cp" style="transition-delay:620ms" cx="227.2" cy="107.6" r="3.2" fill="#3F8C22" fill-opacity=".85"/><circle class="cp" style="transition-delay:665ms" cx="234.8" cy="123.2" r="3.2" fill="#3F8C22" fill-opacity=".85"/><circle class="cp" style="transition-delay:710ms" cx="242.4" cy="109.3" r="3.2" fill="#3F8C22" fill-opacity=".85"/><circle class="cp" style="transition-delay:755ms" cx="250.1" cy="127.2" r="3.2" fill="#3F8C22" fill-opacity=".85"/><circle class="cp" style="transition-delay:800ms" cx="257.6" cy="123.9" r="3.2" fill="#3F8C22" fill-opacity=".85"/><circle class="cp" style="transition-delay:845ms" cx="265.2" cy="128.6" r="3.2" fill="#3F8C22" fill-opacity=".85"/><text x="246.2" y="318.0" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="9.6" font-weight="700" fill="#102A1C">LABEL RATE</text><text x="246.2" y="354.0" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" font-weight="400" fill="#8A9189">n=6  CV 1.9%</text><g class="cb" style="transition-delay:440ms"><rect x="341.8" y="110.7" width="60" height="60.3" fill="#3F8C22" fill-opacity=".12"/><path d="M337.8 140.8 h68" stroke="#3F8C22" stroke-width="2.4"/></g><circle class="cp" style="transition-delay:740ms" cx="352.8" cy="174.0" r="3.2" fill="#3F8C22" fill-opacity=".85"/><circle class="cp" style="transition-delay:785ms" cx="360.4" cy="99.7" r="3.2" fill="#3F8C22" fill-opacity=".85"/><circle class="cp" style="transition-delay:830ms" cx="367.9" cy="109.9" r="3.2" fill="#3F8C22" fill-opacity=".85"/><circle class="cp" style="transition-delay:875ms" cx="375.6" cy="110.2" r="3.2" fill="#3F8C22" fill-opacity=".85"/><circle class="cp" style="transition-delay:920ms" cx="383.1" cy="174.7" r="3.2" fill="#3F8C22" fill-opacity=".85"/><circle class="cp" style="transition-delay:965ms" cx="390.8" cy="176.3" r="3.2" fill="#3F8C22" fill-opacity=".85"/><text x="371.8" y="318.0" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="9.6" font-weight="700" fill="#102A1C">2&#215; LABEL RATE</text><text x="371.8" y="354.0" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" font-weight="400" fill="#8A9189">n=6  CV 2.4%</text><g class="cb" style="transition-delay:560ms"><rect x="467.2" y="140.4" width="60" height="22.2" fill="#E0A42E" fill-opacity=".12"/><path d="M463.2 151.5 h68" stroke="#E0A42E" stroke-width="2.4"/></g><circle class="cp" style="transition-delay:860ms" cx="478.2" cy="168.6" r="3.2" fill="#E0A42E" fill-opacity=".85"/><circle class="cp" style="transition-delay:905ms" cx="485.9" cy="158.1" r="3.2" fill="#E0A42E" fill-opacity=".85"/><circle class="cp" style="transition-delay:950ms" cx="493.4" cy="138.8" r="3.2" fill="#E0A42E" fill-opacity=".85"/><circle class="cp" style="transition-delay:995ms" cx="501.1" cy="147.5" r="3.2" fill="#E0A42E" fill-opacity=".85"/><circle class="cp" style="transition-delay:1040ms" cx="508.6" cy="133.4" r="3.2" fill="#E0A42E" fill-opacity=".85"/><circle class="cp" style="transition-delay:1085ms" cx="516.2" cy="162.4" r="3.2" fill="#E0A42E" fill-opacity=".85"/><text x="497.2" y="318.0" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="9.6" font-weight="700" fill="#102A1C">REDUCED N</text><text x="497.2" y="331.0" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="9.6" font-weight="700" fill="#102A1C">+ LABEL RATE</text><text x="497.2" y="354.0" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" font-weight="400" fill="#8A9189">n=6  CV 2.1%</text><text x="15.0" y="160.0" text-anchor="middle" transform="rotate(-90 15.0 160.0)" font-family="Inter,system-ui,sans-serif" font-size="10" font-weight="700" letter-spacing="1.4" fill="#8A9189">RELATIVE YIELD, INDEX</text></svg><figcaption class="cap">Fig. 2 &#8212; Replicate values by treatment arm, single site-year.<div class="cap-n">Every replicate is plotted. Bar is the treatment mean; shaded block is the 95&#8201;% interval. A result that depends on hiding replicates is not a result.</div></figcaption></figure></div>
+<div class="rv">
+<div class="lab a">Replication</div>
+<p class="one">Four replications minimum, and all of them get reported.</p>
+<p class="fine" style="margin-top:28px">A strip trial produces a number. A randomized, replicated block produces a number with an interval around it, and the interval is what tells a reviewer whether the difference is real. Where treatments overlap, we say so.</p>
+</div>
+</div>
+</div></section>
+
+<section class="plate"><img loading="lazy" src="https://images.unsplash.com/photo-1582794496242-8165eed32971?auto=format&fit=crop&q=70&w=2000" alt="A researcher recording observations"><div class="cbar"><div class="wrap"><p class="pcap"><b>Before the season.</b> Endpoints and the analysis plan are fixed in writing, then measured. Nothing is chosen after the data arrives.</p></div></div></section>
+
+<section><div class="wrap">
+<div class="hd rv"><div class="lab a">Endpoints</div><h2>What gets measured.</h2></div>
+<div class="scroll rv"><table class="tbl">
+<thead><tr><th>Domain</th><th>Measures</th><th>Basis</th></tr></thead><tbody>
+<tr><td>Soil chemistry</td><td>pH and buffer pH, cation exchange capacity, available phosphorus and potassium, organic matter</td><td>Baseline and post-harvest, same georeferenced points</td></tr>
+<tr><td>Soil physics</td><td>Water-holding capacity, aggregate stability, bulk density, infiltration</td><td>Composite cores by depth increment</td></tr>
+<tr><td>Plant response</td><td>Stand, biomass, tissue nutrient concentration, yield and grain quality</td><td>Tissue at defined growth stage; harvest by plot</td></tr>
+<tr><td>Silicon status</td><td>Plant-available soil silicon and leaf silicon concentration</td><td>0.5 M acetic acid extraction by depth increment; tissue digestion</td></tr>
+<tr><td>Turf performance</td><td>Canopy color and density, clipping yield, wear and drought tolerance</td><td>Rated plots under a wear simulator or managed traffic</td></tr>
+<tr><td>Nutrient fate</td><td>Leachate and runoff nutrient concentration</td><td>Lysimeter or edge-of-plot collection where the claim requires it</td></tr>
+<tr><td>Economics</td><td>Delivered cost per acre, nutrient displaced, net return</td><td>Partial budget at contemporaneous input prices</td></tr>
+</tbody></table></div></div></section>
+
+<section class="white"><div class="wrap">
+<div class="hd rv"><div class="lab">Registration</div><h2>Data a state will accept.</h2>
+<p>Most states with a soil amendment law require a product to be registered before it is sold, and require the registrant to substantiate every claim on the label. Several route the file to the land-grant university for review.</p></div>
+<div class="rowlist">
+<div class="rv"><div class="k">CLAIMS</div><h3>Written first</h3><p>Each claim is drafted in label wording, then a trial is designed to test that exact wording.</p></div>
+<div class="rv"><div class="k">SOILS</div><h3>As the state defines them</h3><p>Commonly several soil types common to the state of registration, with at least one site inside it.</p></div>
+<div class="rv"><div class="k">RECORD</div><h3>Reviewer-ready</h3><p>Objective, materials and methods, conditions, results, discussion, and the qualifications of the people who ran it.</p></div>
+<div class="rv"><div class="k">SCOPE</div><h3>Labels are broader than packaging</h3><p>Control officials treat brochures and websites as labeling. Claims there need the same substantiation.</p></div>
+</div>
+<div class="rv" style="margin-top:72px;max-width:760px"><figure class="figw"><svg class="chart" id="f5" viewBox="0 0 580 258" role="img" aria-label="Fig. 5 &#8212; Site-year matrix for a registration file."><text x="156.0" y="30.0" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9.6" font-weight="600" fill="#8A9189">Y1 S1</text><text x="219.0" y="30.0" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9.6" font-weight="600" fill="#8A9189">Y1 S2</text><text x="282.0" y="30.0" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9.6" font-weight="600" fill="#8A9189">Y2 S1</text><text x="345.0" y="30.0" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9.6" font-weight="600" fill="#8A9189">Y2 S2</text><text x="408.0" y="30.0" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9.6" font-weight="600" fill="#8A9189">Y3 S1</text><text x="471.0" y="30.0" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9.6" font-weight="600" fill="#8A9189">Y3 S2</text><text x="114.0" y="61.6" text-anchor="end" font-family="Inter,system-ui,sans-serif" font-size="9.8" font-weight="700" fill="#102A1C">SILT LOAM &#183; MO</text><rect class="cp" style="transition-delay:0ms" x="128" y="44" width="56" height="28" rx="3" fill="#3F8C22" fill-opacity=".88"/><rect class="cp" style="transition-delay:42ms" x="191" y="44" width="56" height="28" rx="3" fill="#3F8C22" fill-opacity=".88"/><rect class="cp" style="transition-delay:84ms" x="254" y="44" width="56" height="28" rx="3" fill="#3F8C22" fill-opacity=".88"/><rect class="cp" style="transition-delay:126ms" x="317" y="44" width="56" height="28" rx="3" fill="#3F8C22" fill-opacity=".88"/><rect class="cp" style="transition-delay:168ms" x="380" y="44" width="56" height="28" rx="3" fill="#3F8C22" fill-opacity=".34"/><rect class="cp" style="transition-delay:210ms" x="443" y="44" width="56" height="28" rx="3" fill="#E4DCCA" fill-opacity="1"/><text x="114.0" y="96.6" text-anchor="end" font-family="Inter,system-ui,sans-serif" font-size="9.8" font-weight="700" fill="#102A1C">CLAYPAN &#183; MO</text><rect class="cp" style="transition-delay:90ms" x="128" y="79" width="56" height="28" rx="3" fill="#3F8C22" fill-opacity=".88"/><rect class="cp" style="transition-delay:132ms" x="191" y="79" width="56" height="28" rx="3" fill="#3F8C22" fill-opacity=".88"/><rect class="cp" style="transition-delay:174ms" x="254" y="79" width="56" height="28" rx="3" fill="#3F8C22" fill-opacity=".88"/><rect class="cp" style="transition-delay:216ms" x="317" y="79" width="56" height="28" rx="3" fill="#3F8C22" fill-opacity=".34"/><rect class="cp" style="transition-delay:258ms" x="380" y="79" width="56" height="28" rx="3" fill="#E4DCCA" fill-opacity="1"/><rect class="cp" style="transition-delay:300ms" x="443" y="79" width="56" height="28" rx="3" fill="#E4DCCA" fill-opacity="1"/><text x="114.0" y="131.6" text-anchor="end" font-family="Inter,system-ui,sans-serif" font-size="9.8" font-weight="700" fill="#102A1C">SANDY &#183; KS</text><rect class="cp" style="transition-delay:180ms" x="128" y="114" width="56" height="28" rx="3" fill="#E4DCCA" fill-opacity="1"/><rect class="cp" style="transition-delay:222ms" x="191" y="114" width="56" height="28" rx="3" fill="#3F8C22" fill-opacity=".88"/><rect class="cp" style="transition-delay:264ms" x="254" y="114" width="56" height="28" rx="3" fill="#3F8C22" fill-opacity=".88"/><rect class="cp" style="transition-delay:306ms" x="317" y="114" width="56" height="28" rx="3" fill="#3F8C22" fill-opacity=".88"/><rect class="cp" style="transition-delay:348ms" x="380" y="114" width="56" height="28" rx="3" fill="#3F8C22" fill-opacity=".34"/><rect class="cp" style="transition-delay:390ms" x="443" y="114" width="56" height="28" rx="3" fill="#E4DCCA" fill-opacity="1"/><text x="114.0" y="166.6" text-anchor="end" font-family="Inter,system-ui,sans-serif" font-size="9.8" font-weight="700" fill="#102A1C">TURF &#183; MO</text><rect class="cp" style="transition-delay:270ms" x="128" y="149" width="56" height="28" rx="3" fill="#3F8C22" fill-opacity=".88"/><rect class="cp" style="transition-delay:312ms" x="191" y="149" width="56" height="28" rx="3" fill="#3F8C22" fill-opacity=".88"/><rect class="cp" style="transition-delay:354ms" x="254" y="149" width="56" height="28" rx="3" fill="#3F8C22" fill-opacity=".34"/><rect class="cp" style="transition-delay:396ms" x="317" y="149" width="56" height="28" rx="3" fill="#E4DCCA" fill-opacity="1"/><rect class="cp" style="transition-delay:438ms" x="380" y="149" width="56" height="28" rx="3" fill="#E4DCCA" fill-opacity="1"/><rect class="cp" style="transition-delay:480ms" x="443" y="149" width="56" height="28" rx="3" fill="#E4DCCA" fill-opacity="1"/><text x="114.0" y="201.6" text-anchor="end" font-family="Inter,system-ui,sans-serif" font-size="9.8" font-weight="700" fill="#102A1C">RECLAIM &#183; IL</text><rect class="cp" style="transition-delay:360ms" x="128" y="184" width="56" height="28" rx="3" fill="#E4DCCA" fill-opacity="1"/><rect class="cp" style="transition-delay:402ms" x="191" y="184" width="56" height="28" rx="3" fill="#E4DCCA" fill-opacity="1"/><rect class="cp" style="transition-delay:444ms" x="254" y="184" width="56" height="28" rx="3" fill="#3F8C22" fill-opacity=".88"/><rect class="cp" style="transition-delay:486ms" x="317" y="184" width="56" height="28" rx="3" fill="#3F8C22" fill-opacity=".88"/><rect class="cp" style="transition-delay:528ms" x="380" y="184" width="56" height="28" rx="3" fill="#3F8C22" fill-opacity=".34"/><rect class="cp" style="transition-delay:570ms" x="443" y="184" width="56" height="28" rx="3" fill="#E4DCCA" fill-opacity="1"/><rect x="128" y="232" width="13" height="13" rx="2.5" fill="#3F8C22" fill-opacity=".88"/><text x="148.0" y="243.0" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="10" font-weight="500" fill="#8A9189">complete</text><rect x="246" y="232" width="13" height="13" rx="2.5" fill="#3F8C22" fill-opacity=".34"/><text x="266.0" y="243.0" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="10" font-weight="500" fill="#8A9189">in progress</text><rect x="364" y="232" width="13" height="13" rx="2.5" fill="#E4DCCA" fill-opacity="1"/><text x="384.0" y="243.0" text-anchor="start" font-family="Inter,system-ui,sans-serif" font-size="10" font-weight="500" fill="#8A9189">not started</text></svg><figcaption class="cap">Fig. 5 &#8212; Site-year matrix for a registration file.<div class="cap-n">Most states want two years at several sites, on soils common to that state. The matrix is agreed before the first plot is laid out.</div></figcaption></figure></div>
+<p class="fine">We are a research firm, not a registration agent. We produce the data and the report; filing is yours or your counsel&rsquo;s. The same trial standard carries public work &mdash; conservation programs, watershed districts and reclamation projects &mdash; where the question is performance on a given soil rather than a label.</p>
+</div></section>
+
+<section class="cream2"><div class="wrap">
+<div class="hd rv"><div class="lab">Crops</div><h2>Grasses first. Then the rest.</h2>
+<p>Grasses take up silicon in amounts comparable to a macronutrient, so a silica-rich amendment has the clearest shot at a measurable response there. The pipeline widens from that starting point.</p></div>
+<div class="rowlist">
+<div class="rv"><div class="k">01</div><h3>Cereals and grains</h3><p>Corn, sorghum, wheat, oats, barley, rice.</p></div>
+<div class="rv"><div class="k">02</div><h3>Turf and forage grasses</h3><p>Golf, sports fields, sod and pasture. Wear tolerance and canopy quality join yield as endpoints.</p></div>
+<div class="rv"><div class="k">03</div><h3>Pulses and legumes</h3><p>Soybean, dry bean, pea, lentil, alfalfa. Nitrogen is fixed, so the efficiency question becomes phosphorus and potassium.</p></div>
+<div class="rv"><div class="k">04</div><h3>Oilseeds and fiber</h3><p>Canola, sunflower, flax, cotton.</p></div>
+<div class="rv"><div class="k">05</div><h3>Specialty and horticulture</h3><p>Vegetables, fruit, nursery and greenhouse, where value per acre carries a higher amendment rate.</p></div>
+<div class="rv"><div class="k">06</div><h3>Reclamation and revegetation</h3><p>Mine spoil, construction sites, roadsides and other ground being brought back into function.</p></div>
+</div></div></section>
+
+<section class="white"><div class="wrap">
+<div class="hd rv"><div class="lab">Variables</div><h2>One material, many conditions.</h2></div>
+<div class="rowlist">
+<div class="rv"><div class="k">SOIL</div><h3>Sand to heavy clay</h3><p>Degraded, eroded, compacted, saline, acidic or low in organic matter. The ground that needs help most.</p></div>
+<div class="rv"><div class="k">RATE</div><h3>Rate, blend, placement</h3><p>Broadcast, banded or incorporated, alone or blended with conventional fertilizer.</p></div>
+<div class="rv"><div class="k">SEASON</div><h3>More than one year</h3><p>A single season proves little. Weather is a treatment, not an excuse.</p></div>
+</div></div></section>
+
+<section class="imgband"><div class="bg b ken" style="background-image:url(https://images.unsplash.com/photo-1591754060004-f91c95f5cf05?auto=format&fit=crop&q=70&w=2000)"></div>
+<div class="wrap"><span>Stage two</span><p>Controlled growth, before anything reaches a field.</p></div></section>
+
+<section class="dark ph"><div class="bg v ken" style="background-image:url(https://images.unsplash.com/photo-1537721664796-76f77222a5d0?auto=format&fit=crop&q=70&w=2000)"></div><div class="wrap">
+<div class="rowlist">
+<div class="rv"><div class="k">FIELD</div><h3>Protocol and execution</h3><p>Claim review, protocol, site and cooperator selection, plot layout, sampling, laboratory coordination, in-season reporting.</p></div>
+<div class="rv"><div class="k">DATA</div><h3>Analysis and modeling</h3><p>Analysis of variance across site-years, response-curve fitting by crop and soil, partial budget per acre.</p></div>
+<div class="rv"><div class="k">OUTPUT</div><h3>Reporting</h3><p>Trial report in substantiation format, summary tables, technical bulletins and support for grant applications.</p></div>
+</div>
+<p class="fine">Controlled-environment, phenotyping and analytical work is placed with university and research-institute core facilities. Client work is confidential, data belongs to the client, and publication is by agreement. We say in advance what a study can and cannot support.</p>
+</div></section>
+
+<section id="contact" class="cream2"><div class="wrap">
+<div class="lab">Contact</div>
+<h2 class="xl" style="max-width:14ch;color:#102A1C">Tell us what to measure.</h2>
+<div class="mail"><a class="addr" href="mailto:admin@bedrockagronomics.com">admin@bedrockagronomics.com</a><button class="copy" type="button" data-addr="admin@bedrockagronomics.com">Copy address</button></div>
+</div></section>
+
+</main>
+<footer><div class="wrap"><div class="fgrid"><div><span class="lm"><svg viewBox="0 0 60 84" aria-hidden="true" class="mk"><defs><clipPath id="bkf"><path d="M0 0 H31 A21 21 0 0 1 31 42 H0 Z"/><path d="M0 38 H37 A23 23 0 0 1 37 84 H0 Z"/></clipPath></defs><g clip-path="url(#bkf)"><g transform="rotate(-14 30 42)"><rect x="-48" y="-38" width="170" height="54" fill="#E8B65A"/><rect x="-48" y="19.5" width="170" height="16.5" fill="#8FC9BF"/><rect x="-48" y="39.5" width="170" height="16.5" fill="#D9EAE6"/><rect x="-48" y="59.5" width="170" height="80" fill="#FFFFFF"/></g></g></svg><span class="lw" style="color:#FFFFFF"><b>Bedrock</b> Agronomics</span></span><p style="margin:18px 0 0;max-width:36ch">Independent agronomic research on soil amendments and fertilizer efficiency. St.&nbsp;Louis, Missouri.</p></div>
+<div><h4>Company</h4><a href="index.html">Home</a><a href="research.html">Research</a></div>
+<div><h4>Contact</h4><a href="mailto:admin@bedrockagronomics.com">admin@bedrockagronomics.com</a><span style="display:block;padding:5px 0">St. Louis, Missouri</span></div>
+</div><div class="fbot"><span>&copy; 2026 Bedrock Agronomics, LLC &middot; in formation</span><span>Photographs licensed via Unsplash</span></div></div></footer>
+<script>
+(function(){
+  var targets = document.querySelectorAll('.chart, .rv');
+  if (!('IntersectionObserver' in window)) {
+    targets.forEach(function(t){ t.classList.add('in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { rootMargin: '0px 0px -12% 0px', threshold: 0.18 });
+  targets.forEach(function(t){ io.observe(t); });
+})();
+document.querySelectorAll('.copy').forEach(function(b){
+  b.addEventListener('click', function(){
+    var a = b.getAttribute('data-addr');
+    var done = function(){ b.textContent='Copied'; setTimeout(function(){ b.textContent='Copy address'; }, 1800); };
+    var fb = function(){ try{ var t=document.createElement('textarea'); t.value=a; document.body.appendChild(t); t.select(); document.execCommand('copy'); document.body.removeChild(t); done(); }catch(e){} };
+    try{ navigator.clipboard.writeText(a).then(done, fb); }catch(e){ fb(); }
+  });
+});
+</script>
+</body>
+</html>
